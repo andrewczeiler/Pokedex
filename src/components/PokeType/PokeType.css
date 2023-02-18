@@ -1,0 +1,13 @@
+.pokeTypes {
+  display: flex;
+  align-items: center;
+}
+
+.pokeType {
+  padding: 0.3em;
+  border-radius: 0.5em;
+  margin: 0.2em;
+  font-size: 1.2em;
+  font-family: "Monaco", monospace;
+  text-transform: uppercase;
+}

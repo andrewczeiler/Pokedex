@@ -1,0 +1,25 @@
+.pokemonClass {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  background-color: rgb(240, 64, 40);
+  padding: 1em;
+  margin: 1em;
+  justify-content: flex-start;
+  box-shadow: 0em 0.1em 0.1em 0.1em black;
+  border-radius: 2em;
+}
+
+.pokemonName {
+  font-size: 2em;
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 0.8em;
+  font-family: "Monaco", monospace;
+}
+
+.pokemonNumber {
+  font-size: 2em;
+  font-family: "Monaco", monospace;
+  padding-top: 0.8em;
+}
