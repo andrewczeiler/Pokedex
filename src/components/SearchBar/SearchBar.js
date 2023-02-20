@@ -1,4 +1,5 @@
 import './SearchBar.css';
+import pokeball from './pokeball.png';
 
 export default function SearchBar( {setSearch} ){
     let inputHandler = (e) => {
@@ -8,9 +9,6 @@ export default function SearchBar( {setSearch} ){
     return (
         <div className="searchBar">
             <input className="search" placeholder="Enter Pokemon" onChange={inputHandler}/>
-            <button type="submit">
-                <img src="pokeball.png" alt="PokeBall pic" />
-            </button>
         </div>
     )
 }
