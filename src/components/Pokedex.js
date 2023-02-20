@@ -1,33 +1,43 @@
 import { useState, useEffect } from 'react';
 import Pokemon from './Pokemon.js';
+import SearchBar from './SearchBar/SearchBar.js';
 
 export default function Pokedex(){
   const [posts, setPosts] = useState([]);
 
+  const [tempFilter, setTempFilter] = useState([]);
 
   useEffect(() => {
       fetch('https://pokeapi.co/api/v2/pokemon?limit=1008&offset=0')
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
-          setPosts(data);
+          setPosts(data.results);
+          setTempFilter(data.results);
         })
         .catch((err) => {
           console.log(err.message);
         });
   }, []);
 
-
-  const pokeList = posts.results?.map(pokemon =>
+  const pokeList = tempFilter.map(pokemon =>
     <Pokemon
         name={pokemon.name}
         url={pokemon.url}
     />
   )
 
+  function searchPokemon(name){
+    const filterPoke = posts.filter(pokemon =>
+      pokemon.name.includes(name))
+    setTempFilter(filterPoke);
+  }
+
   return (
     <div>
-      {pokeList}
+      <SearchBar setSearch={searchPokemon}/>
+      <div style={{marginTop: "10em"}}>
+        {pokeList}
+      </div>
     </div>
   );
 }

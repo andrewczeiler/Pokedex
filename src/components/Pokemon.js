@@ -16,11 +16,11 @@ export default function Pokemon({ name, url }){
       callFetch().catch(console.error);
     }, [url]);
 
-    console.log(poke);
 
     function pokeClick(){
       setSwitchPoke(!switchPoke);
     }
+
 
     if (!switchPoke) {
       return(
