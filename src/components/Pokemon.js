@@ -10,7 +10,6 @@ export default function Pokemon({ name, url }){
     useEffect(() => {
       const callFetch = async () => {
         const pokemonData = await axios.get(url);
-        console.log(pokemonData)
         setPoke(pokemonData);
       }
       callFetch().catch(console.error);

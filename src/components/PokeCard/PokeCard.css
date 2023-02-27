@@ -1,8 +1,9 @@
 .pokemonClass {
-  width: 25%;
+  width: 20%;
   height: 50%;
   display: flex;
-  background-color: rgb(120, 190, 62);
+  /*background-color: rgb(120, 190, 62);*/
+  background-color: rgb(173, 173, 173);
   padding: 1em;
   margin: 1em;
   align-items: center;
@@ -19,17 +20,16 @@
   font-size: 2em;
   text-align: center;
   text-transform: capitalize;
-  padding-top: 0.8em;
   font-family: "Monaco", monospace;
 }
 
 .pokemonNumber {
   font-size: 2em;
+  right: 0;
   font-family: "Monaco", monospace;
-  padding-top: 0.8em;
 }
 
-.pokemonImage {
-  width: 10%;
+.pokemonImg {
+  width: 50%;
   height: auto;
 }
