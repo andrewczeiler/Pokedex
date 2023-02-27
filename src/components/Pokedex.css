@@ -1,6 +1,10 @@
 .pokedex {
   margin-top: 8em;
   display: flex;
+  align-content: flex-start;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: rgb(180, 180, 180);
+  padding: 2em;
+  border-radius: 1em;
 }

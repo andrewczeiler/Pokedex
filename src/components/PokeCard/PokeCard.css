@@ -1,9 +1,6 @@
 .pokemonClass {
   width: 20%;
-  height: 50%;
   display: flex;
-  /*background-color: rgb(120, 190, 62);*/
-  background-color: rgb(173, 173, 173);
   padding: 1em;
   margin: 1em;
   align-items: center;
@@ -30,6 +27,6 @@
 }
 
 .pokemonImg {
-  width: 50%;
+  width: 60%;
   height: auto;
 }

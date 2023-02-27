@@ -1,5 +1,5 @@
 body {
-  background-color: black;
-  background-image: linear-gradient(to right, rgb(5, 13, 53), rgb(28, 28, 145));
+  background-color: rgb(255, 39, 39);
+  /*background-image: linear-gradient(to right, rgb(5, 13, 53), rgb(28, 28, 145));*/
 }
 /*background-image: linear-gradient(to right, turquoise, rgb(191, 191, 255));*/
