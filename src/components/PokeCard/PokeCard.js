@@ -6,7 +6,7 @@ export default function PokeCard( {pokeClick, poke} ){
           <div className="pokemonNumber">
             {'#' + poke.data?.id}
           </div>
-          <img src={poke.data?.sprites.front_default} alt="Pokemon Sprite Missing RIP"/>
+          <img className="pokemonImg" src={poke.data?.sprites.front_default} alt="Pokemon Sprite Missing RIP"/>
           <div className="pokemonName">
             {poke.data?.name}
           </div>

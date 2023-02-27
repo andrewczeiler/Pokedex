@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Pokemon from './Pokemon.js';
 import SearchBar from './SearchBar/SearchBar.js';
+import './Pokedex.css';
 
 export default function Pokedex(){
   const [posts, setPosts] = useState([]);
@@ -8,7 +9,7 @@ export default function Pokedex(){
   const [tempFilter, setTempFilter] = useState([]);
 
   useEffect(() => {
-      fetch('https://pokeapi.co/api/v2/pokemon?limit=1008&offset=0')
+      fetch("https://pokeapi.co/api/v2/pokemon?limit=100&offset=0")
         .then((response) => response.json())
         .then((data) => {
           setPosts(data.results);
@@ -35,7 +36,7 @@ export default function Pokedex(){
   return (
     <div>
       <SearchBar setSearch={searchPokemon}/>
-      <div style={{marginTop: "10em"}}>
+      <div className="pokedex">
         {pokeList}
       </div>
     </div>

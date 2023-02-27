@@ -1,0 +1,6 @@
+.pokedex {
+  margin-top: 8em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

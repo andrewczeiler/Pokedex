@@ -5,22 +5,20 @@ import PokeInfo from './PokeInfo/PokeInfo.js';
 
 export default function Pokemon({ name, url }){
     const [poke, setPoke] = useState([]);
-
     const [switchPoke, setSwitchPoke] = useState(false);
 
     useEffect(() => {
       const callFetch = async () => {
         const pokemonData = await axios.get(url);
+        console.log(pokemonData)
         setPoke(pokemonData);
       }
       callFetch().catch(console.error);
     }, [url]);
 
-
     function pokeClick(){
       setSwitchPoke(!switchPoke);
     }
-
 
     if (!switchPoke) {
       return(

@@ -1,13 +1,18 @@
 .pokemonClass {
-  width: 80%;
+  width: 25%;
   height: 50%;
   display: flex;
-  background-color: rgb(240, 64, 40);
+  background-color: rgb(120, 190, 62);
   padding: 1em;
   margin: 1em;
-  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
   box-shadow: 0em 0.1em 0.1em 0.1em black;
   border-radius: 2em;
+}
+
+.pokemonClass:hover {
+  background-color: rgb(131, 206, 96);
 }
 
 .pokemonName {
@@ -22,4 +27,9 @@
   font-size: 2em;
   font-family: "Monaco", monospace;
   padding-top: 0.8em;
+}
+
+.pokemonImage {
+  width: 10%;
+  height: auto;
 }
