@@ -3,8 +3,6 @@ import { types } from './Types.js'
 
 
 export default function PokeType( {data} ){
-
-
     return (
         <div className="pokeTypes">
             {data.types.map((poke) => {

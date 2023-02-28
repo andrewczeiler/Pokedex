@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import PokeCard from './PokeCard/PokeCard.js';
 import PokeInfo from './PokeInfo/PokeInfo.js';
+import PokeModal from './PokeModal/PokeModal.js';
 
 export default function Pokemon({ name, url }){
     const [poke, setPoke] = useState([]);
-    const [switchPoke, setSwitchPoke] = useState(false);
+    const [modal, setModal] = useState(false);
 
     useEffect(() => {
       const callFetch = async () => {
@@ -16,17 +17,20 @@ export default function Pokemon({ name, url }){
     }, [url]);
 
     function pokeClick(){
-      setSwitchPoke(!switchPoke);
+      setModal(!modal);
     }
 
-    if (!switchPoke) {
-      return(
-        <PokeCard pokeClick={pokeClick} poke={poke}/>
+    if(modal){
+      return (
+        <>
+          <PokeCard pokeClick={pokeClick} poke={poke}/>
+          <PokeModal pokeClick={pokeClick} poke={poke}/>
+        </>
       )
     }
-    else {
+    else{
       return(
-        <PokeInfo pokeClick={pokeClick} poke={poke}/>
+        <PokeCard pokeClick={pokeClick} poke={poke}/>
       )
     }
 }

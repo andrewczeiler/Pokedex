@@ -1,0 +1,27 @@
+.modalWrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 100%;
+    z-index: 10;
+}
+
+.modalContent {
+    width: 50%;
+    border-radius: 1.5em;
+    backdrop-filter: blur(10px);
+}
+
+.pokeName {
+    font-size: 10em;
+    opacity: 100%;
+}
+
+.pokeImg {
+    opacity: 100%;
+}

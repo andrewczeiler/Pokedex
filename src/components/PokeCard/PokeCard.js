@@ -10,12 +10,26 @@ export default function PokeCard( {pokeClick, poke} ){
     }
   }
 
+  function convertID(id){
+    if(id <= 9){
+      return `#00${id}`;
+    }
+    else if(id <= 99){
+      return `#0${id}`;
+    }
+    else{
+      return id;
+    }
+  }
+
   return(
       <div className="pokemonClass" style={{backgroundColor: color}} onClick={pokeClick}>
-        <div className="pokemonNumber">
-          {'#' + poke.data?.id}
+        <div className="pokeRow">
+          <img className="pokemonImg" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${poke.data?.id}.png`} alt="Pokemon Sprite Missing RIP"/>
+          <div className="pokemonNumber">
+            {convertID(poke.data?.id)}
+          </div>
         </div>
-        <img className="pokemonImg" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${poke.data?.id}.png`} alt="Pokemon Sprite Missing RIP"/>
         <div className="pokemonName">
           {poke.data?.name}
         </div>
