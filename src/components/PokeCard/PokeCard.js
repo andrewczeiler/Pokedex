@@ -1,5 +1,6 @@
 import './PokeCard.css';
-import { types } from '../PokeType/Types.js';
+import { types } from './CardType.js';
+import PokeType from '../PokeType/PokeType.js';
 
 export default function PokeCard( {pokeClick, poke} ){
   let color = "white";
@@ -30,6 +31,7 @@ export default function PokeCard( {pokeClick, poke} ){
             {convertID(poke.data?.id)}
           </div>
         </div>
+        <PokeType poke={poke}/>
         <div className="pokemonName">
           {poke.data?.name}
         </div>
