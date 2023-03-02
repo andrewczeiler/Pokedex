@@ -1,0 +1,38 @@
+.evoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.evoDesc {
+    font: 2em;
+    text-align: center;
+    width: 20%;
+}
+
+.arrow {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+}
+  
+.line {
+    margin-top: 14px;
+    width: 90px;
+    background: blue;
+    height: 10px;
+    float: left;
+}
+  
+.point {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 30px solid blue;
+    float: right;
+}
+
+.arrowPic {
+    width: 20%;
+}
