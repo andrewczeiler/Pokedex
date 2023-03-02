@@ -17,6 +17,11 @@
     backdrop-filter: blur(10px);
     background: rgba(221, 176, 92, 0.5);
     display: flex;
+    flex-direction: column;
+}
+
+.topModalContent {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -27,8 +32,15 @@
     opacity: 100%;
 }
 
-.contentSeperator {
+.verticalSeperator {
     height: 22em;
+    border: .4em solid rgba(24, 23, 23, 0.5);
+    border-radius: 1.2em;
+}
+
+.horizontalSeperator {
+    right: 0;
+    left: 0;
     border: .4em solid rgba(24, 23, 23, 0.5);
     border-radius: 1.2em;
 }
@@ -68,4 +80,9 @@
     height: 1.5em;
     border-radius: 0.8em;
 }
- 
+
+.pokeEvos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
