@@ -19,7 +19,7 @@ export default function PokeEvoDesc( {poke} ){
     let evoInfo = '';
     
     if(poke.min_level !== null){
-        evoInfo += 'Lvl ' + poke.min_level;
+        evoInfo += 'Level ' + poke.min_level;
     }
     else if(poke.min_happiness !== null){
         evoInfo += poke.min_happiness + ' Happiness';
@@ -48,23 +48,23 @@ export default function PokeEvoDesc( {poke} ){
     }
     if(poke.party_species !== null){
         const pokeName = firstLetterUppercase(poke.party_species.name);
-        evoInfo += 'Lvl up with ' + pokeName + ' in party'
+        evoInfo += 'Level up with ' + pokeName + ' in party'
     }
     if(poke.location !== null){
-        evoInfo += 'Lvl up at '
+        evoInfo += 'Level up at '
         const locationName = splitDashAndUppercase(poke.location.name)
         evoInfo += locationName;
     }
     if(poke.held_item !== null && poke.trigger_name === "level-up"){
         let itemName = splitDashAndUppercase(poke.held_item.name);
-        evoInfo += 'Lvl up holding ' + itemName;
+        evoInfo += 'Level up holding ' + itemName;
     }
     if(poke.time_of_day !== ""){
         evoInfo += ' during ' + poke.time_of_day;
     }
     if(poke.known_move !== null){
         const move = splitDashAndUppercase(poke.known_move.name);
-        evoInfo += 'Levels up with ' + move;
+        evoInfo += 'Level up with ' + move;
     }
     
 
