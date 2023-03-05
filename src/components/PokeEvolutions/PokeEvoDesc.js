@@ -60,11 +60,22 @@ export default function PokeEvoDesc( {poke} ){
         evoInfo += 'Level up holding ' + itemName;
     }
     if(poke.time_of_day !== ""){
-        evoInfo += ' during ' + poke.time_of_day;
+        const time = splitDashAndUppercase(poke.time_of_day);
+        evoInfo += ' during ' + time;
     }
     if(poke.known_move !== null){
         const move = splitDashAndUppercase(poke.known_move.name);
         evoInfo += 'Level up with ' + move;
+    }
+    if(poke.known_move_type !== null){
+        const type = firstLetterUppercase(poke.known_move_type.name);
+        evoInfo += 'Level up with ' + type + ' move';
+    }
+    if(poke.needs_overworld_rain){
+        evoInfo += ' and Raining';
+    }
+    if(poke.turn_upside_down){
+        evoInfo += ' while Turned Upside Down'
     }
     
 
