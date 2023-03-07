@@ -1,5 +1,5 @@
 import './SearchBar.css';
-import pokeball from './pokeball.png';
+import icon from './icon.png';
 import { useState } from 'react';
 
 export default function SearchBar( {setSearch} ){
@@ -14,9 +14,11 @@ export default function SearchBar( {setSearch} ){
     }
 
     return (
-        <div className="searchBar">
-            <input className="search" placeholder="Enter Pokemon" onChange={inputHandler} />
-            <button onClick={searchPoke}>test</button>
+        <div className="search">
+            <input className="searchBar" placeholder="Enter Pokemon..." onChange={inputHandler} />
+            <button className="searchButton" onClick={searchPoke}>
+                <img className="searchImg" src={icon} alt="Pokeball sprite" />
+            </button>
         </div>
     )
 }
