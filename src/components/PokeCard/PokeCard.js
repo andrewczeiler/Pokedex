@@ -19,7 +19,7 @@ export default function PokeCard( {pokeClick, poke} ){
       return `#0${id}`;
     }
     else{
-      return id;
+      return `#${id}`;
     }
   }
 

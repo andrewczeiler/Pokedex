@@ -15,7 +15,7 @@
 .pokeRow {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .pokemonClass:hover {
@@ -32,6 +32,7 @@
 .pokemonNumber {
   font-size: 2em;
   font-family: "Monaco", monospace;
+  margin-right: 0.4em;
 }
 
 .pokemonImg {
