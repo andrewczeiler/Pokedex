@@ -1,90 +1,100 @@
 .modalWrapper {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 100%;
-    z-index: 10;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 100%;
+  z-index: 10;
 }
 
 .modalContent {
-    width: 50%;
-    border-radius: 1.5em;
-    backdrop-filter: blur(10px);
-    background: rgba(221, 176, 92, 0.5);
-    display: flex;
-    flex-direction: column;
+  width: 50%;
+  border-radius: 1.5em;
+  backdrop-filter: blur(10px);
+  background: rgba(221, 176, 92, 0.5);
+  display: flex;
+  flex-direction: column;
 }
 
 .topModalContent {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .pokeImg {
-    width: 45%;
-    opacity: 100%;
+  width: 45%;
+  opacity: 100%;
 }
 
 .verticalSeperator {
-    height: 22em;
-    border: .4em solid rgba(24, 23, 23, 0.5);
-    border-radius: 1.2em;
+  height: 22em;
+  border: 0.4em solid rgba(24, 23, 23, 0.5);
+  border-radius: 1.2em;
 }
 
 .horizontalSeperator {
-    right: 0;
-    left: 0;
-    border: .4em solid rgba(24, 23, 23, 0.5);
-    border-radius: 1.2em;
+  right: 0;
+  left: 0;
+  border: 0.4em solid rgba(24, 23, 23, 0.5);
+  border-radius: 1.2em;
 }
 
 .pokeStats {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 45%;
 }
 
 .pokeStat {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .statLabel {
-    margin: 0.1em;
-    font-size: 1.5em;
-    width: 50%;
-    font-weight: bold;
-    font-family: "Monaco", monospace;
+  margin: 0.1em;
+  font-size: 1.5em;
+  width: 50%;
+  font-weight: bold;
+  font-family: "Monaco", monospace;
 }
 
 .statBar {
-    width: 50%;
-    height: 1.5em;
-    background-color: rgb(212, 221, 247);
-    border-radius: 1em;
-    margin: 0.3em;
+  width: 50%;
+  height: 1.5em;
+  background-color: rgb(212, 221, 247);
+  border-radius: 1em;
+  margin: 0.3em;
 }
-  
+
 .statBar div {
-    background-color: rgb(11, 243, 11);
-    height: 1.5em;
-    border-radius: 0.8em;
+  background-color: rgb(11, 243, 11);
+  height: 1.5em;
+  border-radius: 0.8em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.statNum {
+  margin-left: 0.5em;
+  font-family: "Monaco", monospace;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 .pokeEvos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
 }

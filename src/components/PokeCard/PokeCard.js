@@ -26,7 +26,7 @@ export default function PokeCard( {pokeClick, poke} ){
   return(
       <div className="pokemonClass" style={{backgroundColor: color}} onClick={pokeClick}>
         <div className="pokeRow">
-          <img className="pokemonImg" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${poke.data?.id}.png`} alt="Pokemon Sprite Missing RIP"/>
+          <img className="pokemonImg" loading="lazy" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${poke.data?.id}.png`} alt="Pokemon Sprite Missing RIP"/>
           <div className="pokemonNumber">
             {convertID(poke.data?.id)}
           </div>

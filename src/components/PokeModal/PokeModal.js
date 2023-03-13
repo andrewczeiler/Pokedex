@@ -12,50 +12,50 @@ export default function PokeModal( {pokeClick, poke} ){
                     <div className="pokeStats">
                         <div className="pokeStat">
                             <div className="statLabel">
-                                {"HP: " + poke.data?.stats[0].base_stat}
+                                {"HP: "}
                             </div>
                             <div className="statBar">
-                                <div style={{width: Math.min(poke.data?.stats[0].base_stat / 1.5, 100) + "%"}}></div>
+                                <div style={{width: Math.min(poke.data?.stats[0].base_stat / 1.5, 100) + "%"}}><span className="statNum">{poke.data?.stats[0].base_stat}</span></div>
                             </div>
                         </div>
                         <div className="pokeStat">
                             <div className="statLabel">
-                                {"Attack: " + poke.data?.stats[1].base_stat}
+                                {"Atk: "}
                             </div>
                             <div className="statBar">
-                                <div style={{width: Math.min(poke.data?.stats[1].base_stat / 1.5, 100) + "%"}}></div>
+                                <div style={{width: Math.min(poke.data?.stats[1].base_stat / 1.5, 100) + "%"}}><span className="statNum">{poke.data?.stats[1].base_stat}</span></div>
                             </div>
                         </div>
                         <div className="pokeStat">
                             <div className="statLabel">
-                                {"Defense: " + poke.data?.stats[2].base_stat}
+                                {"Def: "}
                             </div>
                             <div className="statBar">
-                                <div style={{width: Math.min(poke.data?.stats[2].base_stat / 1.5, 100) + "%"}}></div>
+                                <div style={{width: Math.min(poke.data?.stats[2].base_stat / 1.5, 100) + "%"}}><span className="statNum">{poke.data?.stats[2].base_stat}</span></div>
                             </div>
                         </div>
                         <div className="pokeStat">
                             <div className="statLabel">
-                                {"Sp. Atk: " + poke.data?.stats[3].base_stat}
+                                {"Sp.Atk: "}
                             </div>
                             <div className="statBar">
-                                <div style={{width: Math.min(poke.data?.stats[3].base_stat / 1.5, 100) + "%"}}></div>
+                                <div style={{width: Math.min(poke.data?.stats[3].base_stat / 1.5, 100) + "%"}}><span className="statNum">{poke.data?.stats[3].base_stat}</span></div>
                             </div>
                         </div>
                         <div className="pokeStat">
                             <div className="statLabel">
-                                {"Sp. Def: " + poke.data?.stats[4].base_stat}
+                                {"Sp.Def: "}
                             </div>
                             <div className="statBar">
-                                <div style={{width: Math.min(poke.data?.stats[4].base_stat / 1.5, 100) + "%"}}></div>
+                                <div style={{width: Math.min(poke.data?.stats[4].base_stat / 1.5, 100) + "%"}}><span className="statNum">{poke.data?.stats[4].base_stat}</span></div>
                             </div>
                         </div>
                         <div className="pokeStat">
                             <div className="statLabel">
-                                {"Speed: " + poke.data?.stats[5].base_stat}
+                                {"Speed: "}
                             </div>
                             <div className="statBar">
-                                <div style={{width: Math.min(poke.data?.stats[5].base_stat / 1.5, 100) + "%"}}></div>
+                                <div style={{width: Math.min(poke.data?.stats[5].base_stat / 1.5, 100) + "%"}}><span className="statNum">{poke.data?.stats[5].base_stat}</span></div>
                             </div>
                         </div>
                     </div>
