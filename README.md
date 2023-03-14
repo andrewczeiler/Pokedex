@@ -1,11 +1,8 @@
 Pokedex App Current Features:
 
-- View all currently available Pokemon
-- Click on Pokemon to view popup functionality
-- Search bar functionality
+- View all currently available Pokemon and their types
+- Click on Pokemon to view modal
+- Modal view includes stats and evolutions with descriptions
+- Search for pokemon
 
-Todo:
-- Improve search bar design
-- Add nav bar
-- Improve Pokemon popup style
-
+Current deployment: https://main.d13wgu7boer32t.amplifyapp.com/
